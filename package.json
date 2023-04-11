@@ -27,19 +27,11 @@
     "secret manager",
     "env"
   ],
-  "author": "Enderson Costa",
+  "author": "Jhonathan S Soares",
   "license": "MIT",
   "homepage": "https://github.com/jhomarolo/aws-secret-to-env#readme",
   "dependencies": {
-    "@herbsjs/herbs": "^1.6.2"
-  },
-  "peerDependencies": {
-    "mongodb": "^4.8.1"
-  },
-  "peerDependenciesMeta": {
-    "mongodb": {
-      "optional": false
-    }
+    "aws-sdk": "^2.1356.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.9",
