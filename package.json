@@ -1,0 +1,83 @@
+{
+  "name": "aws-secret-to-env",
+  "version": "0.0.0-development",
+  "description": "Create repositories using Mongo to retrieve and store Entities.",
+  "main": "./src/getSecrets.js",
+  "scripts": {
+    "test": "mocha --timeout 999999 --colors --recursive ./test",
+    "testdb": "mocha --timeout 999999 --colors --exit --recursive ./testdb",
+    "testfull": "npm test && npm run testdb",
+    "coverage-report": "nyc --reporter=html --reporter=html mocha --recursive ./test --timeout 10000",
+    "coverage": "nyc --reporter=text mocha --recursive ./test --timeout 10000",
+    "semantic-release": "semantic-release",
+    "lint": "npx eslint \"**/*.{js,jsx}\" --quiet",
+    "lint:fix": "npx eslint \"**/*.{js,jsx}\" --fix",
+    "commit": "cz"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "test",
+    "example": "examples"
+  },
+  "engines": {
+    "node": ">= 14.x"
+  },
+  "keywords": [
+    "aws",
+    "secret manager",
+    "env"
+  ],
+  "author": "Enderson Costa",
+  "license": "MIT",
+  "homepage": "https://github.com/jhomarolo/aws-secret-to-env#readme",
+  "dependencies": {
+    "@herbsjs/herbs": "^1.6.2"
+  },
+  "peerDependencies": {
+    "mongodb": "^4.8.1"
+  },
+  "peerDependenciesMeta": {
+    "mongodb": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "aws-sdk": "^2.1356.0",
+    "aws-sdk-mock": "^5.8.0",
+    "chai": "^4.3.7",
+    "cz-conventional-changelog": "^3.3.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^4.1.0",
+    "jest": "^29.5.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.7.1",
+    "semantic-release": "^21.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhomarolo/aws-secret-to-env.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
