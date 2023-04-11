@@ -1,18 +1,16 @@
-[![CI](https://github.com/herbsjs/herbs2mongo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/herbsjs/herbs2mongo/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/herbsjs/herbs2mongo/branch/main/graph/badge.svg)](https://codecov.io/gh/herbsjs/herbs2mongo)
+[![CD Build](https://github.com/jhomarolo/aws-secret-to-env/actions/workflows/cd.yml/badge.svg?branch=main)](https://github.com/jhomarolo/aws-secret-to-env/actions/workflows/cd.yml)
 
-# herbs2mongo
+# aws-secret-to-env
 
-herbs2mongo creates repositories to retrieve and store [Entities](https://github.com/herbsjs/gotu) using [MongoDB](https://docs.mongodb.com/drivers/node/current/).
+aws-secret-to-env
 
 ### Installing
 ```
-    $ npm install @herbsjs/herbs2mongo
+    $ npm install aws-secret-to-env
 ```
 
 ### Using
 
-`connection.js` - MongoDB initialization:
-```javascript
-const {MongoClient,Logger} = require('mongodb')
-const config = require('./config')
+```
+    $ npx aws-secret-to-env
+```
