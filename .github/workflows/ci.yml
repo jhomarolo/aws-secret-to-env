@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [18.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -23,8 +23,8 @@ jobs:
         run: npm i --ignore-scripts
       - name: Running tests
         run: |
-              npm test
-              npx nyc --reporter=lcov npm test && npx codecov
+          npm test
+          npx nyc --reporter=lcov npm test && npx codecov
         env:
           CI: true
       - name: Upload coverage to Codecov
@@ -32,4 +32,3 @@ jobs:
 
       - name: Running Linter - ESLint
         run: npm run lint
-
