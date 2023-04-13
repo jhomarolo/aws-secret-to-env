@@ -1,21 +1,17 @@
 /* eslint-disable no-console */
+const fs = require('fs')
 const AWS = require('aws-sdk')
-  require('dotenv').config({ path: '.env.example' })
-  const fs = require('fs')
+const config = require('./config').aws
+require('./env')({ path: process.argv[3] })
 
-  // Configura as credenciais da AWS
-  AWS.config.update({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY_ID,
-    sessionToken: process.env.AWS_SESSION_TOKEN,
-    region: 'sa-east-1',
-  })
+// Configura as credenciais da AWS
+AWS.config.update(config)
 
   const secretsmanager = new AWS.SecretsManager()
 
-  async function getSecrets(env) {
+  async function getSecrets(secretFile) {
     return new Promise((resolve, reject) => {
-      secretsmanager.getSecretValue({ SecretId: env }, function(err, data) {
+      secretsmanager.getSecretValue({ SecretId: secretFile }, function(err, data) {
         if (err) reject(err)
         else resolve(data.SecretString)
       })
@@ -37,8 +33,10 @@ const AWS = require('aws-sdk')
         console.error("⚠ Falha na autenticação: credenciais não preenchidas ⚠")
       }else if (error.message.includes("can't find the specified secret")){
         console.error("⚠ Falha na autenticação: secret não localizada, verifique o nome do serviço. ⚠")
+      }else if (error.message.includes("'SecretId' in params")){
+        console.error("⚠ Falha na autenticação: SVC_NAME é obrigatório. ⚠")
       }
     }
   }
 
-  module.exports = generateEnv
+generateEnv()
