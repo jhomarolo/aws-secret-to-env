@@ -4,7 +4,7 @@
   "description": "Create repositories using Mongo to retrieve and store Entities.",
   "main": "./src/getSecrets.js",
   "bin": {
-    "aws-secret-to-env": "./src/getSecrets.js"
+    "aws-secret-to-env": "./bin/getSecrets.js"
   },
   "scripts": {
     "test": "mocha --timeout 999999 --colors --recursive ./test",
