@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 const fs = require('fs')
 const AWS = require('aws-sdk')
+require('./env')(process.argv[3])
 const config = require('./config').aws
-require('./env')({ path: process.argv[3] })
 
 // Configura as credenciais da AWS
 AWS.config.update(config)
