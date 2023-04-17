@@ -3,7 +3,7 @@
   "version": "1.1.1",
   "description": "Create repositories using Mongo to retrieve and store Entities.",
   "bin": {
-    "aws-secret-to-env": "./src/getSecrets.js"
+    "aws-secret-to-env": "./bin/getSecrets.js"
   },
   "scripts": {
     "test": "mocha --timeout 999999 --colors --recursive ./test",
