@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.2.1...v1.2.2) (2023-04-17)
+
+
+### Bug Fixes
+
+* adicionando pacote dotenv como dependencia ([1f63b2b](https://github.com/jhomarolo/aws-secret-to-env/commit/1f63b2b7d1af506f6a0e3416cacfa671b1e39e0a))
+* ajustando sync packge-lock ([70d6fb4](https://github.com/jhomarolo/aws-secret-to-env/commit/70d6fb44bffc58578ee893731685d7d37a6c4b6d))
+
 ## [1.2.1](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.2.0...v1.2.1) (2023-04-17)
 
 
