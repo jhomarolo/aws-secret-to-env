@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.1.0...v1.1.1) (2023-04-17)
+
+
+### Bug Fixes
+
+* corrige erro ao buscar caminho relativo do cliente ([09c7a68](https://github.com/jhomarolo/aws-secret-to-env/commit/09c7a68f26c4a6179880921a7fcef719830296ec))
+
 # [1.1.0](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.0.0...v1.1.0) (2023-04-17)
 
 
