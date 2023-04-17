@@ -1,4 +1,4 @@
-require('dotenv').config({ path: process.argv[3] })
+require('../env')(process.argv[3])
 
 module.exports = {
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
