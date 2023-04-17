@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.1.1...v1.2.0) (2023-04-17)
+
+
+### Features
+
+* adicionando pasta bin ([67e636f](https://github.com/jhomarolo/aws-secret-to-env/commit/67e636fba8c59ab558a5271b1f265a14ec19d457))
+
 ## [1.1.1](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.1.0...v1.1.1) (2023-04-17)
 
 
