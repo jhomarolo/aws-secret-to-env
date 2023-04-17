@@ -1,5 +1,9 @@
 const dotenv = require('dotenv')
+const path = require('path')
 
-module.exports = (envFile)=>{
-  return dotenv.config(envFile)
+const defaultFile = '.env.example'
+
+module.exports = (envFile=defaultFile)=>{
+  const envFileClientPath = path.join(__dirname, `./${envFile}`)
+  return dotenv.config({path: envFileClientPath})
 }
