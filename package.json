@@ -8,8 +8,6 @@
   },
   "scripts": {
     "test": "mocha --timeout 999999 --colors --recursive ./test",
-    "testdb": "mocha --timeout 999999 --colors --exit --recursive ./testdb",
-    "testfull": "npm test && npm run testdb",
     "coverage-report": "nyc --reporter=html --reporter=html mocha --recursive ./test --timeout 10000",
     "coverage": "nyc --reporter=text mocha --recursive ./test --timeout 10000",
     "semantic-release": "semantic-release",
@@ -23,7 +21,7 @@
     "example": "examples"
   },
   "engines": {
-    "node": ">= 18.x"
+    "node": ">= 14.x"
   },
   "keywords": [
     "aws",
@@ -40,8 +38,7 @@
     "@babel/eslint-parser": "^7.21.3",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/npm": "^10.0.3",
+    "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "aws-sdk": "^2.1356.0",
     "aws-sdk-mock": "^5.8.0",
@@ -60,7 +57,7 @@
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
     "prettier": "^2.8.7",
-    "semantic-release": "^21.0.1"
+    "semantic-release": "^19.0.3"
   },
   "repository": {
     "type": "git",
