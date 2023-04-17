@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.0.0...v1.1.0) (2023-04-17)
+
+
+### Features
+
+* adicionando arquivo .env.example como padrão na config do dotenv ([34037c9](https://github.com/jhomarolo/aws-secret-to-env/commit/34037c9c17e02000564dbc134d0fb57e3af76a08))
+* adicionando caminho para o arquivo relativo ao cliente e não a raiz da lib ([2921af1](https://github.com/jhomarolo/aws-secret-to-env/commit/2921af10a6d924bf806529cfe21c209986130223))
+
 # 1.0.0 (2023-04-17)
 
 
