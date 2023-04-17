@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.2.0...v1.2.1) (2023-04-17)
+
+
+### Bug Fixes
+
+* tornando arquivo bin executavel ([5c76d05](https://github.com/jhomarolo/aws-secret-to-env/commit/5c76d056f1a8cd32d922b3a549c6e88bd73dbc18))
+
 # [1.2.0](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.1.1...v1.2.0) (2023-04-17)
 
 
