@@ -134,6 +134,11 @@ typings/
 .env.development.local
 .env.test.local
 .env.production.local
+.env.stage
+.env.stg
+env.prod
+env.prd
+env.teste
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
