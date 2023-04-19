@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.2.3...v1.2.4) (2023-04-19)
+
+
+### Performance Improvements
+
+* translate doc ([8250247](https://github.com/jhomarolo/aws-secret-to-env/commit/82502473ab2f047fcdf211f143a49d58a1ac84e4))
+
 ## [1.2.3](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.2.2...v1.2.3) (2023-04-19)
 
 
