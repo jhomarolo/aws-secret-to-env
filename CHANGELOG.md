@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.2.8...v1.3.0) (2023-08-23)
+
+
+### Bug Fixes
+
+* **deps:** bump aws-sdk from 2.1430.0 to 2.1441.0 ([caae9a4](https://github.com/jhomarolo/aws-secret-to-env/commit/caae9a40a0bd18df857563a016b3fda7efdc64a0))
+* **package.lock:** fixing sync packages files issue ([4a0c4c9](https://github.com/jhomarolo/aws-secret-to-env/commit/4a0c4c92e22a2ba47d46c3ba37f8e4bafb4ef876))
+
+
+### Features
+
+* **src/config/aws.js:** getting AWS Credentials event with lowercase letters in .env file ([03a754a](https://github.com/jhomarolo/aws-secret-to-env/commit/03a754a92cd58193230e853e2e0d34bfea276fa0))
+
 ## [1.2.8](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.2.7...v1.2.8) (2023-07-10)
 
 
