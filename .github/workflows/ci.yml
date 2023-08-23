@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Install Packages
+        run: npm ci
+
       - name: Installing dependencies
         run: npm i --ignore-scripts
       - name: Running tests
