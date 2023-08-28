@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.3.0...v1.3.1) (2023-08-28)
+
+
+### Bug Fixes
+
+* **deps:** bump aws-sdk from 2.1413.0 to 2.1445.0 ([c7d78ba](https://github.com/jhomarolo/aws-secret-to-env/commit/c7d78ba28dfb1fdfc60ad233d778e976013f1f82))
+
 # [1.3.0](https://github.com/jhomarolo/aws-secret-to-env/compare/v1.2.8...v1.3.0) (2023-08-23)
 
 
